@@ -1,0 +1,280 @@
+{
+  "HTML": [
+    {
+      "question": "What does HTML stand for?",
+      "choices": [
+        "Hyper Text Markup Language",
+        "High Tech Modern Language",
+        "Hyper Tabular Main Log",
+        "Hyperlinks and Text Markup Language"
+      ],
+      "answer": "Hyper Text Markup Language"
+    },
+    {
+      "question": "Which HTML element is used for the largest heading?",
+      "choices": ["<heading>", "<h6>", "<h1>", "<head>"],
+      "answer": "<h1>"
+    },
+    {
+      "question": "What is the correct HTML element for inserting a line break?",
+      "choices": ["<break>", "<lb>", "<br>", "<span>"],
+      "answer": "<br>"
+    },
+    {
+      "question": "Which attribute is used to provide an alternative text for an image?",
+      "choices": ["title", "alt", "src", "longdesc"],
+      "answer": "alt"
+    },
+    {
+      "question": "What is the correct HTML for creating a hyperlink?",
+      "choices": [
+        "<a url='http://google.com'>Google</a>",
+        "<a>http://google.com</a>",
+        "<a href='http://google.com'>Google</a>",
+        "<link>http://google.com</link>"
+      ],
+      "answer": "<a href='http://google.com'>Google</a>"
+    },
+    {
+      "question": "Which character is used to indicate an end tag?",
+      "choices": ["^", "<", "/", "*"],
+      "answer": "/"
+    },
+    {
+      "question": "How can you make a numbered list?",
+      "choices": ["<ul>", "<list>", "<ol>", "<dl>"],
+      "answer": "<ol>"
+    },
+    {
+      "question": "Which HTML element is used to define important text?",
+      "choices": ["<important>", "<strong>", "<i>", "<mark>"],
+      "answer": "<strong>"
+    },
+    {
+      "question": "In HTML, which attribute is used to specify that an input field must be filled out?",
+      "choices": ["placeholder", "validate", "required", "mandatory"],
+      "answer": "required"
+    },
+    {
+      "question": "Which HTML element is used to specify a footer for a document or section?",
+      "choices": ["<bottom>", "<section>", "<footer>", "<aside>"],
+      "answer": "<footer>"
+    }
+  ],
+  "CSS": [
+    {
+      "question": "What does CSS stand for?",
+      "choices": [
+        "Creative Style Sheets",
+        "Cascading Style Sheets",
+        "Computer Style Sheets",
+        "Colorful Style Sheets"
+      ],
+      "answer": "Cascading Style Sheets"
+    },
+    {
+      "question": "Which HTML attribute is used to define inline styles?",
+      "choices": ["class", "styles", "font", "style"],
+      "answer": "style"
+    },
+    {
+      "question": "Which property is used to change the background color?",
+      "choices": ["color", "bgcolor", "background-color", "fill"],
+      "answer": "background-color"
+    },
+    {
+      "question": "How do you select an element with id 'demo'?",
+      "choices": [".demo", "demo", "#demo", "*demo"],
+      "answer": "#demo"
+    },
+    {
+      "question": "Which property is used to change the left margin of an element?",
+      "choices": ["padding-left", "margin-left", "indent", "spacing"],
+      "answer": "margin-left"
+    },
+    {
+      "question": "How do you make the text bold?",
+      "choices": [
+        "font-style: bold;",
+        "style: bold;",
+        "font-weight: bold;",
+        "text-decoration: bold;"
+      ],
+      "answer": "font-weight: bold;"
+    },
+    {
+      "question": "Which property is used to change the font of an element?",
+      "choices": ["font-family", "font-style", "font-weight", "text-font"],
+      "answer": "font-family"
+    },
+    {
+      "question": "What is the default value of the position property?",
+      "choices": ["relative", "fixed", "absolute", "static"],
+      "answer": "static"
+    },
+    {
+      "question": "How do you select all p elements inside a div element?",
+      "choices": ["div p", "div.p", "div + p", "div > p"],
+      "answer": "div p"
+    },
+    {
+      "question": "Which CSS property controls the text size?",
+      "choices": ["font-style", "text-size", "font-size", "text-style"],
+      "answer": "font-size"
+    }
+  ],
+  "JavaScript": [
+    {
+      "question": "Inside which HTML element do we put the JavaScript?",
+      "choices": ["<js>", "<scripting>", "<script>", "<javascript>"],
+      "answer": "<script>"
+    },
+    {
+      "question": "How do you create a function in JavaScript?",
+      "choices": [
+        "function:myFunction()",
+        "function = myFunction()",
+        "function myFunction()",
+        "new.function()"
+      ],
+      "answer": "function myFunction()"
+    },
+    {
+      "question": "How do you call a function named 'myFunction'?",
+      "choices": [
+        "call myFunction()",
+        "myFunction()",
+        "call function myFunction()",
+        "run.myFunction()"
+      ],
+      "answer": "myFunction()"
+    },
+    {
+      "question": "How to write an IF statement in JavaScript?",
+      "choices": ["if i = 5 then", "if i == 5 then", "if (i == 5)", "if i = 5"],
+      "answer": "if (i == 5)"
+    },
+    {
+      "question": "How does a FOR loop start?",
+      "choices": [
+        "for (i <= 5; i++)",
+        "for i = 1 to 5",
+        "for (let i = 0; i <= 5; i++)",
+        "for (i = 0; i <= 5)"
+      ],
+      "answer": "for (let i = 0; i <= 5; i++)"
+    },
+    {
+      "question": "How do you add a comment in JavaScript?",
+      "choices": ["'This is a comment", "//This is a comment", "", "*This is a comment*"],
+      "answer": "//This is a comment"
+    },
+    {
+      "question": "What is the correct way to write a JavaScript array?",
+      "choices": [
+        "const colors = 'red', 'blue'",
+        "const colors = ['red', 'blue']",
+        "const colors = (1:'red', 2:'blue')",
+        "const colors = 1 = ('red'), 2 = ('blue')"
+      ],
+      "answer": "const colors = ['red', 'blue']"
+    },
+    {
+      "question": "Which operator is used to assign a value to a variable?",
+      "choices": ["*", "=", "x", "-"],
+      "answer": "="
+    },
+    {
+      "question": "What will `typeof []` return in JavaScript?",
+      "choices": ["array", "list", "object", "undefined"],
+      "answer": "object"
+    },
+    {
+      "question": "Which method is used to remove the last element from an array?",
+      "choices": ["pop()", "push()", "shift()", "splice()"],
+      "answer": "pop()"
+    }
+  ],
+  "Accessibility": [
+    {
+      "question": "What does WCAG stand for?",
+      "choices": [
+        "Web Content Accessibility Guidelines",
+        "Web Compliance and Accessibility Group",
+        "Website Content Access Guide",
+        "Web Code Accessibility Goals"
+      ],
+      "answer": "Web Content Accessibility Guidelines"
+    },
+    {
+      "question": "Which attribute should be used to describe the purpose of an interactive element to screen readers?",
+      "choices": ["aria-label", "aria-hidden", "role", "alt"],
+      "answer": "aria-label"
+    },
+    {
+      "question": "What is the minimum contrast ratio for normal text under WCAG AA standards?",
+      "choices": ["3:1", "4.5:1", "7:1", "2:1"],
+      "answer": "4.5:1"
+    },
+    {
+      "question": "Which HTML tag is essential for setting the primary language of a page for screen readers?",
+      "choices": ["<meta>", "<head>", "<html>", "<body>"],
+      "answer": "<html>"
+    },
+    {
+      "question": "What is 'Focus Order' in web accessibility?",
+      "choices": [
+        "The order of CSS styles",
+        "The sequence of keyboard navigation",
+        "The way images load",
+        "The z-index of elements"
+      ],
+      "answer": "The sequence of keyboard navigation"
+    },
+    {
+      "question": "What does the 'alt' attribute do for an image?",
+      "choices": [
+        "Adds a caption",
+        "Makes the image load faster",
+        "Provides a text description for screen readers",
+        "Changes image size"
+      ],
+      "answer": "Provides a text description for screen readers"
+    },
+    {
+      "question": "Why should you avoid using only color to convey information?",
+      "choices": [
+        "It's harder to code",
+        "Colorblind users may not see the distinction",
+        "CSS won't support it",
+        "Screen readers prefer black and white"
+      ],
+      "answer": "Colorblind users may not see the distinction"
+    },
+    {
+      "question": "What is the purpose of a 'skip link'?",
+      "choices": [
+        "To skip to the next page",
+        "To bypass repetitive navigation and go to main content",
+        "To skip advertisements",
+        "To jump to the bottom of the page"
+      ],
+      "answer": "To bypass repetitive navigation and go to main content"
+    },
+    {
+      "question": "Which element should be used for a button to ensure it is keyboard accessible by default?",
+      "choices": ["<div>", "<span>", "<a>", "<button>"],
+      "answer": "<button>"
+    },
+    {
+      "question": "What does ARIA stand for?",
+      "choices": [
+        "Accessible Rich Internet Applications",
+        "Advanced Research in Accessibility",
+        "Automated Responsive Interface Access",
+        "Alternative Real-time Information Assets"
+      ],
+      "answer": "Accessible Rich Internet Applications"
+    }
+  ]
+}

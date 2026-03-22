@@ -1,0 +1,166 @@
+/* 1. Import the variable file */
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Spacing Scale */
+  --spacing-50: 4px;
+  --spacing-100: 8px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-800: 64px;
+  --spacing-1600: 128px;
+  --spacing-1800: 144px;
+  --spacing-2300: 184px;
+
+  /* Colors */
+  --white: #ffffff;
+  --black: #000000;
+  --grey-50: #f4f6fa;
+  --grey-500: #626c7f;
+  --blue-50: #ebf0ff;
+  --blue-100: #edf1f9;
+  --blue-300: #abc1e1;
+  --blue-500: #306aff;
+  --blue-850: #3b4d66;
+  --blue-900: #313e51;
+  --blue-950: #2d3949;
+  --green-100: #e0fdef;
+  --green-500: #2fd887;
+  --purple-100: #f6e7ff;
+  --purple-600: #a729f5;
+  --orange-50: #fff5ed;
+  --orange-400: #ff7e35;
+  --red-500: #ee5454;
+
+  /* SEMANTIC COLOR VARIABLES */
+  --text-color-normal: var(--blue-900);
+  --text-color-light: var(--grey-500);
+  --bg-color: var(--grey-50);
+  --btn-bg-color: var(--white);
+
+  /* Need to define one var for each thing that might change, then when [data-theme='dark'] change those colors  */
+  /*Font Styles */
+  --font-rubik: 'Rubik', sans-serif;
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+
+  /* ——————————————————————————————————————————
+     SECTION: MOBILE TOKENS (Default)
+     —————————————————————————————————————————— */
+  --tp1-fs: 5.5rem;
+  --tp1-lh: 1;
+  --tp1-ls: 0; /* Letter Spacing */
+  --tp1-fw: var(--weight-medium);
+
+  --tp2-fs: 2.5rem;
+  --tp2-lh: 1;
+  --tp2-ls: 0;
+  --tp2-m-fw: var(--weight-medium);
+  --tp2-l-fw: var(--weight-light);
+
+  --tp3-fs: 1.25rem;
+  --tp3-lh: 1.2;
+  --tp3-ls: 0;
+  --tp3-fw: var(--weight-medium);
+
+  --tp4-fs: 1.125rem;
+  --tp4-lh: 1;
+  --tp4-ls: 0;
+  --tp4-fw: var(--weight-medium);
+
+  --tp5-fs: 0.875rem;
+  --tp5-ls: 0;
+  --tp5-i-fs: 0.875rem;
+}
+
+/* ——————————————————————————————————————————
+   SECTION: DESKTOP OVERRIDES
+   —————————————————————————————————————————— */
+@media (min-width: 48rem) {
+  :root {
+    --tp1-fs: 9rem;
+    --tp2-fs: 4rem;
+    --tp3-fs: 2.25rem;
+    --tp4-fs: 1.75rem;
+    --tp5-fs: 1.5rem;
+    --tp6-fs: 1.25rem;
+    /* Note: Letter spacing remains 0 per your image,
+       but you can override it here if needed! */
+  }
+}
+
+/* ——————————————————————————————————————————
+   SECTION: UTILITY CLASSES
+   —————————————————————————————————————————— */
+.text-preset-1 {
+  font-family: var(--font-rubik);
+  font-size: var(--tp1-fs);
+  line-height: var(--tp1-lh);
+  letter-spacing: var(--tp1-ls);
+  font-weight: var(--tp1-fw);
+}
+
+.text-preset-2-medium {
+  font-family: var(--font-rubik);
+  font-size: var(--tp2-fs);
+  line-height: var(--tp2-lh);
+  letter-spacing: var(--tp2-ls);
+  font-weight: var(--tp2-m-fw);
+}
+
+.text-preset-2-light {
+  font-family: var(--font-rubik);
+  font-size: var(--tp2-fs);
+  line-height: var(--tp2-lh);
+  letter-spacing: var(--tp2-ls);
+  font-weight: var(--tp2-l-fw);
+}
+
+.text-preset-3 {
+  font-family: var(--font-rubik);
+  font-size: var(--tp3-fs);
+  line-height: var(--tp3-lh);
+  letter-spacing: var(--tp3-ls);
+  font-weight: var(--tp3-fw);
+}
+
+.text-preset-4 {
+  font-family: var(--font-rubik);
+  font-size: var(--tp4-fs);
+  line-height: var(--tp4-lh);
+  letter-spacing: var(--tp4-ls);
+  font-weight: var(--tp4-fw);
+}
+
+.text-body {
+  font-family: var(--font-rubik);
+  font-size: var(--tp5-fs);
+  line-height: 1.5;
+  letter-spacing: var(--tp5-ls);
+  font-weight: var(--weight-regular);
+}
+
+.text-italic-small {
+  font-family: var(--font-rubik);
+  font-size: var(--tp5-i-fs);
+  line-height: 1.5;
+  letter-spacing: var(--tp5-ls);
+  font-style: italic;
+}
+
+:root[data-theme='dark'] {
+  --bg-color: var(--blue-900);
+  --text-color-normal: var(--white);
+  --text-color-light: var(--blue-300);
+  --btn-bg-color: var(--blue-850);
+}

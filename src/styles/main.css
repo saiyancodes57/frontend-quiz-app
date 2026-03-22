@@ -1,0 +1,41 @@
+@import url('./reset.css');
+@import url('./variables.css');
+
+:root {
+  --site-bg-image: url('@/assets/images/pattern-background-mobile-light.svg');
+}
+
+:root[data-theme='dark'] {
+  --site-bg-image: url('@/assets/images/pattern-background-mobile-dark.svg');
+}
+
+/* Update the variable at the Tablet breakpoint (48rem) */
+@media (min-width: 48rem) {
+  :root {
+    --site-bg-image: url('@/assets/images/pattern-background-tablet-light.svg');
+  }
+
+  :root[data-theme='dark'] {
+    --site-bg-image: url('@/assets/images/pattern-background-tablet-dark.svg');
+  }
+}
+
+@media (min-width: 80rem) {
+  :root {
+    --site-bg-image: url('@/assets/images/pattern-background-desktop-light.svg');
+  }
+
+  :root[data-theme='dark'] {
+    --site-bg-image: url('@/assets/images/pattern-background-desktop-dark.svg');
+  }
+}
+
+body {
+  background-color: var(--bg-color);
+  background-image: var(--site-bg-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
