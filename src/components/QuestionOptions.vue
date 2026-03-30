@@ -8,6 +8,7 @@ const emit = defineEmits(['submitAnswer', 'nextQuestion'])
 const selected = ref('')
 const submitted = ref(false)
 const options = ['A', 'B', 'C', 'D']
+const selectError = ref(false)
 
 function selectAnswer(answer) {
   selected.value = answer
@@ -17,6 +18,8 @@ function submitAnswer() {
   if (selected.value !== '') {
     emit('submitAnswer', selected.value)
     submitted.value = true
+  } else {
+    selectError.value = true
   }
 }
 
@@ -62,10 +65,27 @@ function classObject(answer) {
     <button v-else class="submit text-preset-4" type="button" @click="nextQuestion">
       Next Question
     </button>
+    <div v-if="selectError" class="select-error">
+      <img src="@/assets/images/icon-incorrect.svg" alt="Incorrect icon" />
+      <p class="text-body">Please select an answer</p>
+    </div>
   </nav>
 </template>
 
 <style scoped>
+.select-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  color: var(--red-500);
+}
+
+[data-theme='dark'] .select-error {
+  color: var(--white);
+}
+
 ul {
   list-style: none;
   display: flex;
@@ -157,7 +177,6 @@ button:not(:disabled):focus-visible {
 }
 
 button:disabled {
-  background-color: var(--purple-100);
   cursor: not-allowed;
   transform: none;
   box-shadow: none;
